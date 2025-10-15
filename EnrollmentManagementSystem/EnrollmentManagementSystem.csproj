@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0-ios;net6.0-android;net6.0-windows</TargetFramework>
+    <UseMaui>true</UseMaui>
+    <ApplicationTitle>Enrollment Management System</ApplicationTitle>
+    <RootNamespace>EnrollmentManagementSystem</RootNamespace>
+    <AssemblyName>EnrollmentManagementSystem</AssemblyName>
+    <Nullable>enable</Nullable>
+    <UseDotNetCliToolReference>true</UseDotNetCliToolReference>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <MauiXaml Include="src\App.xaml" />
+    <Compile Include="src\App.xaml.cs" />
+    <MauiXaml Include="src\MainPage.xaml" />
+    <Compile Include="src\MainPage.xaml.cs" />
+    <Compile Include="src\Models\Enrollment.cs" />
+    <Compile Include="src\ViewModels\MainViewModel.cs" />
+    <MauiXaml Include="src\Views\EnrollmentView.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Maui" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>

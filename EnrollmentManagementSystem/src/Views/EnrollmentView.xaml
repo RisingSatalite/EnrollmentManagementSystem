@@ -1,0 +1,24 @@
+<content>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EnrollmentManagementSystem.Views.EnrollmentView"
+             Title="Enrollment">
+
+    <StackLayout Padding="20">
+        <Label Text="Enrollment Form" 
+               FontSize="24" 
+               HorizontalOptions="Center" 
+               VerticalOptions="Start" />
+
+        <Entry Placeholder="Student Name" />
+        <Entry Placeholder="Course Name" />
+        <DatePicker Date="{Binding EnrollmentDate}" />
+        
+        <Button Text="Submit" 
+                Command="{Binding SubmitCommand}" 
+                HorizontalOptions="Center" 
+                VerticalOptions="End" />
+    </StackLayout>
+</ContentPage>
+</content>
