@@ -1,0 +1,40 @@
+students = [[id, Name, Date of birth, Gender, GPA from a previous institution, Semester Number, Program, Courses Count]]
+
+function generateID(){
+    while(true)
+        tryID = Number
+        for(student in students){
+            if(tryID == student.ID)
+                tryID += 1
+                continue# to reset the for loop, until an id is added that is not already in use
+        }
+        return tryID
+}
+
+while(user.is_loginned):
+    option = user.input_or_selection
+    
+    if(option is "enroll")
+        while
+            get new students information
+            confirmed information
+            if wrong
+                loop
+            else
+                break
+        newID = generateID 
+        add student and assign an ID
+
+    if(option is "modify")
+        search for student id
+        edit information
+        confirm changes
+
+
+    if(option is "delete")
+        id = input_or_selection
+        if(input("Delete student)):
+            delete
+
+    if(option is "logout")
+        break
