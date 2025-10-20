@@ -26,7 +26,7 @@ while(user.is_loginned):
         add student and assign an ID
 
     if(option is "modify")
-        search for student id
+        id = input_or_selection
         edit information
         confirm changes
 
