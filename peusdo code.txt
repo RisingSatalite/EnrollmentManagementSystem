@@ -58,9 +58,11 @@ while(user.is_loginned):
 
 
     if(option is "delete")
-        id = input_or_selection
-        if(input("Delete student)):
-            delete
+        deletion_id = input_or_selection
+        if(input("Delete student")):
+            for(student in students):
+                if(student.id == deletion_id):
+                    students.remove(student)
 
     if(option is "logout")
         break
