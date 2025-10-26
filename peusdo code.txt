@@ -52,9 +52,13 @@ while(user.is_loginned):
         add student and assign an ID
 
     if(option is "modify")
-        id = input_or_selection
-        edit information
-        confirm changes
+        change_id = input_or_selection
+        for(student in students):
+            if(student.id == deletion_id):
+                student.get_data()
+                
+                confirm changes
+                return
 
 
     if(option is "delete")
