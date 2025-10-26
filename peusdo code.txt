@@ -1,5 +1,31 @@
 students = [[id, Name, Date of birth, Gender, GPA from a previous institution, Semester Number, Program, Courses Count]]
 
+class Student(){
+    string firstName
+    string lastName
+    date dateOfBirth
+    string gender
+    decimal gpa
+    string currentSemester
+    string program
+    integer numberOfCourses
+
+    constructor (firstName, lastName, dob, gender, gpa, semester, program, courses){
+        set this.firstName = firstName
+        set this.lastName = lastName
+        set this.dateOfBirth = dob
+        set this.gender = gender
+        set this.gpa gpa
+        set this.currentSemester = semester
+        set this.program = program
+        set this.numberOfCourses = courses
+    }
+
+    function string getStudentName(){
+        return this.firstName + " " + this.lastName
+    }
+}
+
 function generateID(){
     while(true)
         tryID = Number
