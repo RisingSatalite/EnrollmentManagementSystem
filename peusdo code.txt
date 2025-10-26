@@ -1,4 +1,4 @@
-students = [[id, Name, Date of birth, Gender, GPA from a previous institution, Semester Number, Program, Courses Count]]
+students = [Student ...]
 
 class Student(){
     string firstName
